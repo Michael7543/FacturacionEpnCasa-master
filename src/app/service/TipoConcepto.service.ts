@@ -11,8 +11,6 @@ import { TipoConcepto } from '../model/TipoConcepto';
 export class TipoConceptoService {
 
   constructor(private httpClient: HttpClient) {}
-
-  concepto: TipoConcepto[] = [];
   
   readonly URL_API: string =
    'http://localhost:8080/tipoconcepto/listaTipoConcepto';
