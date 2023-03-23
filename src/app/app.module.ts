@@ -1,19 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { PrimengModule } from "./primeng/primeng.module";//A
+import { RouterModule } from '@angular/router';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PagesModule } from './pages/pages.module';
 
-@NgModule({
+@NgModule({ 
   declarations: [
     AppComponent
   ],
   imports: [
-    PrimengModule,//A
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PagesModule,
+    RouterModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
